@@ -12,9 +12,9 @@ import  ComposableArchitecture
 struct TCA_Arch_PratciceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(
-                store: Store(initialState: ContentReducer.State()) {
-                    ContentReducer()
+            AppCoreView(
+                store: Store(initialState: AppCoreReducer.State()) {
+                    AppCoreReducer()
                 }
             )
         }

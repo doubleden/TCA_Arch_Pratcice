@@ -1,5 +1,5 @@
 //
-//  ContentReducer.swift
+//  ThirdReduceer.swift
 //  TCA_Arch_Pratcice
 //
 //  Created by Denis Denisov on 9/6/25.
@@ -9,22 +9,20 @@ import Foundation
 import ComposableArchitecture
 
 @Reducer
-struct  ContentReducer {
+struct ThirdReducer {
+    
     @ObservableState
-    struct State: Equatable {
-        var text = ""
-    }
+    struct State {}
     
     enum Action {
-        case setRandomText
+        case goToThirdTab
     }
     
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
-            case .setRandomText:
-                state.text = String(Int.random(in: 1...100))
-                return .none
+            case .goToThirdTab:
+                    .none
             }
         }
     }
