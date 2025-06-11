@@ -20,7 +20,9 @@ struct AppCoreView: View {
                     FirstView(store: store.scope(state: \.firstReducer, action: \.firstReducer))
                         .customTabBar(store: store)
                 case .secondTabView:
-                    SecondView()
+                    SecondView(store: Store(initialState: SecondReducer.State()) {
+                        SecondReducer()
+                    })
                         .customTabBar(store: store)
                 case .thirdTabView:
                     ThirdView()

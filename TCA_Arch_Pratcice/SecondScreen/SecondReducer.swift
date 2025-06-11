@@ -12,18 +12,27 @@ import ComposableArchitecture
 struct SecondReducer {
     
     @ObservableState
-    struct State {}
+    struct State {
+        @Presents var details: SecondDetailsReducer.State?
+    }
     
     enum Action {
-        case goToThirdTab
+        case detailsAction(PresentationAction<SecondDetailsReducer.Action>)
+        case showDetails
     }
     
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
-            case .goToThirdTab:
-                    .none
+            case .showDetails:
+                state.details = .init(text: "Hi from parent")
+                return .none
+            default:
+                return .none
             }
+        }
+        .ifLet(\.$details, action: \.detailsAction) {
+            SecondDetailsReducer()
         }
     }
 }

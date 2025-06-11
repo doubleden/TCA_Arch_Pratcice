@@ -31,12 +31,16 @@ struct  AppCoreReducer {
             case .selectTab(let tab):
                 if tab == .firstTabView {
                     state.firstReducer.number = 2
+                    state.firstReducer.user = User()
                 }
                 state.selectedTab = tab
                 return .none
                 
             case .firstReducer(.goToThirdTab):
                 state.selectedTab = .thirdTabView
+                return .none
+                
+            default:
                 return .none
             }
         }

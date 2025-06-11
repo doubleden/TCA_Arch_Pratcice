@@ -22,6 +22,8 @@
 		05465EA12DF75B7000E5CEA9 /* ThirdReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EA02DF75B7000E5CEA9 /* ThirdReducer.swift */; };
 		05465EA72DF7678F00E5CEA9 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EA62DF7678F00E5CEA9 /* TabItem.swift */; };
 		05465EAA2DF767AD00E5CEA9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EA92DF767AD00E5CEA9 /* User.swift */; };
+		05465EFA2DF9CA1D00E5CEA9 /* SecondDetalisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EF92DF9CA1D00E5CEA9 /* SecondDetalisView.swift */; };
+		05465EFC2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EFB2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		05465EA02DF75B7000E5CEA9 /* ThirdReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdReducer.swift; sourceTree = "<group>"; };
 		05465EA62DF7678F00E5CEA9 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		05465EA92DF767AD00E5CEA9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		05465EF92DF9CA1D00E5CEA9 /* SecondDetalisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDetalisView.swift; sourceTree = "<group>"; };
+		05465EFB2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDetailsReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			children = (
 				05465E952DF75ABA00E5CEA9 /* SecondView.swift */,
 				05465E9E2DF75B6800E5CEA9 /* SecondReducer.swift */,
+				05465EF92DF9CA1D00E5CEA9 /* SecondDetalisView.swift */,
+				05465EFB2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift */,
 			);
 			path = SecondScreen;
 			sourceTree = "<group>";
@@ -223,8 +229,10 @@
 				05465E8F2DF7352700E5CEA9 /* AppCoreReducer.swift in Sources */,
 				05465E9F2DF75B6800E5CEA9 /* SecondReducer.swift in Sources */,
 				05465E982DF75AC200E5CEA9 /* ThirdView.swift in Sources */,
+				05465EFA2DF9CA1D00E5CEA9 /* SecondDetalisView.swift in Sources */,
 				05465EA12DF75B7000E5CEA9 /* ThirdReducer.swift in Sources */,
 				05465E9D2DF75B6000E5CEA9 /* FirstReducer.swift in Sources */,
+				05465EFC2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift in Sources */,
 				05465EA72DF7678F00E5CEA9 /* TabItem.swift in Sources */,
 				05465E842DF71D6200E5CEA9 /* TCA_Arch_PratciceApp.swift in Sources */,
 				05465EAA2DF767AD00E5CEA9 /* User.swift in Sources */,

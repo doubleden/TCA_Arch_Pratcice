@@ -15,16 +15,26 @@ struct FirstReducer {
     struct State {
         var number = 0
         var user = User()
+        var text = ""
     }
     
-    enum Action {
+    enum Action: BindableAction {
         case goToThirdTab
+        case binding(BindingAction<State>)
     }
     
     var body: some Reducer<State, Action> {
+        BindingReducer()
+        
         Reduce { state, action in
             switch action {
-            case .goToThirdTab: .none // Как бы делегирует в родительское вью
+            case .goToThirdTab:
+                    return .none // Как бы делегирует в родительское вью
+            case .binding(\.text):
+                print("validation")
+                return .none
+            default:
+                return .none
             }
         }
     }

@@ -9,8 +9,20 @@ import SwiftUI
 import ComposableArchitecture
 
 struct SecondView: View {
+    @Perception.Bindable var store: StoreOf<SecondReducer>
+    
     var body: some View {
-        Text("second")
+        WithPerceptionTracking {
+            VStack {
+                Text("second")
+                Button("Show Details") {
+                    store.send(.showDetails)
+                }
+            }
+            .fullScreenCover(item: $store.scope(state: \.details, action: \.detailsAction)) { detailsReducer in
+                SecondDetailsView(store: detailsReducer)
+            }
+        }
     }
 }
 

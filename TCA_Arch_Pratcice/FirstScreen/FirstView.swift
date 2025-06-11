@@ -9,13 +9,15 @@ import SwiftUI
 import ComposableArchitecture
 
 struct FirstView: View {
-    let store: StoreOf<FirstReducer>
+    @Perception.Bindable var store: StoreOf<FirstReducer>
     
     var body: some View {
         WithPerceptionTracking {
             VStack {
                 Text("\(store.number)")
                 Button("go to third view", action: { store.send(.goToThirdTab) })
+                TextField("some text", text: $store.text)
+                Text(store.text)
             }
         }
     }
