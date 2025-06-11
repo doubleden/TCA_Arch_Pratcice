@@ -1,28 +1,27 @@
 //
-//  ThirdReduceer.swift
-//  TCA_Arch_Pratcice
-//
-//  Created by Denis Denisov on 9/6/25.
+//  ThirdDetailsStore.swift
 //
 
 import Foundation
 import ComposableArchitecture
 
 @Reducer
-struct ThirdReducer {
+struct ThirdDetailsStore {
     
     @ObservableState
-    struct State {}
+    struct State {
+        let user: User
+    }
     
     enum Action {
-        case goToThirdTab
+        case showEdit
     }
     
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
-            case .goToThirdTab:
-                    .none
+            case .showEdit:
+                return .none
             }
         }
     }

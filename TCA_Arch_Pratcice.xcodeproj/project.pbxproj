@@ -16,14 +16,18 @@
 		05465E8F2DF7352700E5CEA9 /* AppCoreReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465E8E2DF7352700E5CEA9 /* AppCoreReducer.swift */; };
 		05465E942DF75AB400E5CEA9 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465E932DF75AB400E5CEA9 /* FirstView.swift */; };
 		05465E962DF75ABA00E5CEA9 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465E952DF75ABA00E5CEA9 /* SecondView.swift */; };
-		05465E982DF75AC200E5CEA9 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465E972DF75AC200E5CEA9 /* ThirdView.swift */; };
+		05465E982DF75AC200E5CEA9 /* ThirdRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465E972DF75AC200E5CEA9 /* ThirdRootView.swift */; };
 		05465E9D2DF75B6000E5CEA9 /* FirstReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465E9C2DF75B6000E5CEA9 /* FirstReducer.swift */; };
 		05465E9F2DF75B6800E5CEA9 /* SecondReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465E9E2DF75B6800E5CEA9 /* SecondReducer.swift */; };
-		05465EA12DF75B7000E5CEA9 /* ThirdReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EA02DF75B7000E5CEA9 /* ThirdReducer.swift */; };
+		05465EA12DF75B7000E5CEA9 /* ThirdRootStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EA02DF75B7000E5CEA9 /* ThirdRootStore.swift */; };
 		05465EA72DF7678F00E5CEA9 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EA62DF7678F00E5CEA9 /* TabItem.swift */; };
 		05465EAA2DF767AD00E5CEA9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EA92DF767AD00E5CEA9 /* User.swift */; };
 		05465EFA2DF9CA1D00E5CEA9 /* SecondDetalisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EF92DF9CA1D00E5CEA9 /* SecondDetalisView.swift */; };
 		05465EFC2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EFB2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift */; };
+		05465F002DF9E8D000E5CEA9 /* ThirdEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465EFF2DF9E8D000E5CEA9 /* ThirdEditView.swift */; };
+		05465F042DF9E8E600E5CEA9 /* ThirdEditStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465F032DF9E8E600E5CEA9 /* ThirdEditStore.swift */; };
+		05F85E882DF9F74500482DE8 /* ThirdDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E862DF9F74500482DE8 /* ThirdDetailsView.swift */; };
+		05F85E892DF9F74500482DE8 /*  ThirdDetailsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E852DF9F74500482DE8 /*  ThirdDetailsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,14 +39,18 @@
 		05465E8E2DF7352700E5CEA9 /* AppCoreReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreReducer.swift; sourceTree = "<group>"; };
 		05465E932DF75AB400E5CEA9 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		05465E952DF75ABA00E5CEA9 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		05465E972DF75AC200E5CEA9 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		05465E972DF75AC200E5CEA9 /* ThirdRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdRootView.swift; sourceTree = "<group>"; };
 		05465E9C2DF75B6000E5CEA9 /* FirstReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstReducer.swift; sourceTree = "<group>"; };
 		05465E9E2DF75B6800E5CEA9 /* SecondReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondReducer.swift; sourceTree = "<group>"; };
-		05465EA02DF75B7000E5CEA9 /* ThirdReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdReducer.swift; sourceTree = "<group>"; };
+		05465EA02DF75B7000E5CEA9 /* ThirdRootStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdRootStore.swift; sourceTree = "<group>"; };
 		05465EA62DF7678F00E5CEA9 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		05465EA92DF767AD00E5CEA9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		05465EF92DF9CA1D00E5CEA9 /* SecondDetalisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDetalisView.swift; sourceTree = "<group>"; };
 		05465EFB2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDetailsReducer.swift; sourceTree = "<group>"; };
+		05465EFF2DF9E8D000E5CEA9 /* ThirdEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdEditView.swift; sourceTree = "<group>"; };
+		05465F032DF9E8E600E5CEA9 /* ThirdEditStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdEditStore.swift; sourceTree = "<group>"; };
+		05F85E852DF9F74500482DE8 /*  ThirdDetailsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ThirdDetailsStore.swift"; sourceTree = "<group>"; };
+		05F85E862DF9F74500482DE8 /* ThirdDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +130,10 @@
 		05465E9B2DF75B4A00E5CEA9 /* ThirdScreen */ = {
 			isa = PBXGroup;
 			children = (
-				05465E972DF75AC200E5CEA9 /* ThirdView.swift */,
-				05465EA02DF75B7000E5CEA9 /* ThirdReducer.swift */,
+				05465EA02DF75B7000E5CEA9 /* ThirdRootStore.swift */,
+				05465E972DF75AC200E5CEA9 /* ThirdRootView.swift */,
+				05F85E872DF9F74500482DE8 /* ThirdDetails */,
+				05465F062DF9E90900E5CEA9 /* ThirdEdit */,
 			);
 			path = ThirdScreen;
 			sourceTree = "<group>";
@@ -142,6 +152,24 @@
 				05465EA92DF767AD00E5CEA9 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		05465F062DF9E90900E5CEA9 /* ThirdEdit */ = {
+			isa = PBXGroup;
+			children = (
+				05465F032DF9E8E600E5CEA9 /* ThirdEditStore.swift */,
+				05465EFF2DF9E8D000E5CEA9 /* ThirdEditView.swift */,
+			);
+			path = ThirdEdit;
+			sourceTree = "<group>";
+		};
+		05F85E872DF9F74500482DE8 /* ThirdDetails */ = {
+			isa = PBXGroup;
+			children = (
+				05F85E852DF9F74500482DE8 /*  ThirdDetailsStore.swift */,
+				05F85E862DF9F74500482DE8 /* ThirdDetailsView.swift */,
+			);
+			path = ThirdDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,13 +256,17 @@
 				05465E942DF75AB400E5CEA9 /* FirstView.swift in Sources */,
 				05465E8F2DF7352700E5CEA9 /* AppCoreReducer.swift in Sources */,
 				05465E9F2DF75B6800E5CEA9 /* SecondReducer.swift in Sources */,
-				05465E982DF75AC200E5CEA9 /* ThirdView.swift in Sources */,
+				05465F042DF9E8E600E5CEA9 /* ThirdEditStore.swift in Sources */,
+				05465E982DF75AC200E5CEA9 /* ThirdRootView.swift in Sources */,
 				05465EFA2DF9CA1D00E5CEA9 /* SecondDetalisView.swift in Sources */,
-				05465EA12DF75B7000E5CEA9 /* ThirdReducer.swift in Sources */,
+				05465F002DF9E8D000E5CEA9 /* ThirdEditView.swift in Sources */,
+				05465EA12DF75B7000E5CEA9 /* ThirdRootStore.swift in Sources */,
 				05465E9D2DF75B6000E5CEA9 /* FirstReducer.swift in Sources */,
 				05465EFC2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift in Sources */,
 				05465EA72DF7678F00E5CEA9 /* TabItem.swift in Sources */,
 				05465E842DF71D6200E5CEA9 /* TCA_Arch_PratciceApp.swift in Sources */,
+				05F85E882DF9F74500482DE8 /* ThirdDetailsView.swift in Sources */,
+				05F85E892DF9F74500482DE8 /*  ThirdDetailsStore.swift in Sources */,
 				05465EAA2DF767AD00E5CEA9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +410,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,7 +443,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

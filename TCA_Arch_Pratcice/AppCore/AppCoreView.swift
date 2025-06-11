@@ -23,10 +23,12 @@ struct AppCoreView: View {
                     SecondView(store: Store(initialState: SecondReducer.State()) {
                         SecondReducer()
                     })
-                        .customTabBar(store: store)
+                    .customTabBar(store: store)
                 case .thirdTabView:
-                    ThirdView()
-                        .customTabBar(store: store)
+                    ThirdRootView(store: Store(initialState: ThirdRootStore.State()) {
+                        ThirdRootStore()
+                    })
+                    .customTabBar(store: store)
                 }
             }
         }
