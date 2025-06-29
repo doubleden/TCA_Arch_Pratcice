@@ -28,6 +28,14 @@
 		05465F042DF9E8E600E5CEA9 /* ThirdEditStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05465F032DF9E8E600E5CEA9 /* ThirdEditStore.swift */; };
 		05F85E882DF9F74500482DE8 /* ThirdDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E862DF9F74500482DE8 /* ThirdDetailsView.swift */; };
 		05F85E892DF9F74500482DE8 /*  ThirdDetailsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E852DF9F74500482DE8 /*  ThirdDetailsStore.swift */; };
+		05F85E902DFB45AE00482DE8 /* CustomNavigationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E8D2DFB45AE00482DE8 /* CustomNavigationStore.swift */; };
+		05F85E912DFB45AE00482DE8 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E8E2DFB45AE00482DE8 /* CustomNavigationView.swift */; };
+		05F85E952DFC7CD700482DE8 /* CustomNavDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E932DFC7CD700482DE8 /* CustomNavDetailView.swift */; };
+		05F85E962DFC7CD700482DE8 /*  CustomNavDetailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E922DFC7CD700482DE8 /*  CustomNavDetailStore.swift */; };
+		05F85E9A2DFC7CE200482DE8 /*  CustomNavEditStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E972DFC7CE200482DE8 /*  CustomNavEditStore.swift */; };
+		05F85E9B2DFC7CE200482DE8 /* CustomNavEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E982DFC7CE200482DE8 /* CustomNavEditView.swift */; };
+		05F85E9F2DFC7DD200482DE8 /*  CustomNavMenuStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E9C2DFC7DD200482DE8 /*  CustomNavMenuStore.swift */; };
+		05F85EA02DFC7DD200482DE8 /* CustomNavMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F85E9D2DFC7DD200482DE8 /* CustomNavMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +59,14 @@
 		05465F032DF9E8E600E5CEA9 /* ThirdEditStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdEditStore.swift; sourceTree = "<group>"; };
 		05F85E852DF9F74500482DE8 /*  ThirdDetailsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ThirdDetailsStore.swift"; sourceTree = "<group>"; };
 		05F85E862DF9F74500482DE8 /* ThirdDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDetailsView.swift; sourceTree = "<group>"; };
+		05F85E8D2DFB45AE00482DE8 /* CustomNavigationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationStore.swift; sourceTree = "<group>"; };
+		05F85E8E2DFB45AE00482DE8 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		05F85E922DFC7CD700482DE8 /*  CustomNavDetailStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CustomNavDetailStore.swift"; sourceTree = "<group>"; };
+		05F85E932DFC7CD700482DE8 /* CustomNavDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavDetailView.swift; sourceTree = "<group>"; };
+		05F85E972DFC7CE200482DE8 /*  CustomNavEditStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CustomNavEditStore.swift"; sourceTree = "<group>"; };
+		05F85E982DFC7CE200482DE8 /* CustomNavEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavEditView.swift; sourceTree = "<group>"; };
+		05F85E9C2DFC7DD200482DE8 /*  CustomNavMenuStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CustomNavMenuStore.swift"; sourceTree = "<group>"; };
+		05F85E9D2DFC7DD200482DE8 /* CustomNavMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +108,7 @@
 				05465E992DF75B3A00E5CEA9 /* FirstScreen */,
 				05465E9A2DF75B4300E5CEA9 /* SecondScreen */,
 				05465E9B2DF75B4A00E5CEA9 /* ThirdScreen */,
+				05F85E8A2DFA2DEF00482DE8 /* CustomNavigationStack */,
 				05465E8B2DF71E0900E5CEA9 /* READEME.md */,
 				05465E7E2DF71D6200E5CEA9 /* Assets.xcassets */,
 			);
@@ -170,6 +187,45 @@
 				05F85E862DF9F74500482DE8 /* ThirdDetailsView.swift */,
 			);
 			path = ThirdDetails;
+			sourceTree = "<group>";
+		};
+		05F85E8A2DFA2DEF00482DE8 /* CustomNavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				05F85E8D2DFB45AE00482DE8 /* CustomNavigationStore.swift */,
+				05F85E8E2DFB45AE00482DE8 /* CustomNavigationView.swift */,
+				05F85E9E2DFC7DD200482DE8 /* CustomNavMenu */,
+				05F85E992DFC7CE200482DE8 /* CustomNavEdit */,
+				05F85E942DFC7CD700482DE8 /* CustomNavDetail */,
+			);
+			path = CustomNavigationStack;
+			sourceTree = "<group>";
+		};
+		05F85E942DFC7CD700482DE8 /* CustomNavDetail */ = {
+			isa = PBXGroup;
+			children = (
+				05F85E922DFC7CD700482DE8 /*  CustomNavDetailStore.swift */,
+				05F85E932DFC7CD700482DE8 /* CustomNavDetailView.swift */,
+			);
+			path = CustomNavDetail;
+			sourceTree = "<group>";
+		};
+		05F85E992DFC7CE200482DE8 /* CustomNavEdit */ = {
+			isa = PBXGroup;
+			children = (
+				05F85E972DFC7CE200482DE8 /*  CustomNavEditStore.swift */,
+				05F85E982DFC7CE200482DE8 /* CustomNavEditView.swift */,
+			);
+			path = CustomNavEdit;
+			sourceTree = "<group>";
+		};
+		05F85E9E2DFC7DD200482DE8 /* CustomNavMenu */ = {
+			isa = PBXGroup;
+			children = (
+				05F85E9C2DFC7DD200482DE8 /*  CustomNavMenuStore.swift */,
+				05F85E9D2DFC7DD200482DE8 /* CustomNavMenuView.swift */,
+			);
+			path = CustomNavMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,18 +307,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F85E902DFB45AE00482DE8 /* CustomNavigationStore.swift in Sources */,
+				05F85E912DFB45AE00482DE8 /* CustomNavigationView.swift in Sources */,
 				05465E832DF71D6200E5CEA9 /* AppCoreView.swift in Sources */,
 				05465E962DF75ABA00E5CEA9 /* SecondView.swift in Sources */,
 				05465E942DF75AB400E5CEA9 /* FirstView.swift in Sources */,
 				05465E8F2DF7352700E5CEA9 /* AppCoreReducer.swift in Sources */,
 				05465E9F2DF75B6800E5CEA9 /* SecondReducer.swift in Sources */,
 				05465F042DF9E8E600E5CEA9 /* ThirdEditStore.swift in Sources */,
+				05F85E9F2DFC7DD200482DE8 /*  CustomNavMenuStore.swift in Sources */,
+				05F85EA02DFC7DD200482DE8 /* CustomNavMenuView.swift in Sources */,
+				05F85E952DFC7CD700482DE8 /* CustomNavDetailView.swift in Sources */,
+				05F85E962DFC7CD700482DE8 /*  CustomNavDetailStore.swift in Sources */,
 				05465E982DF75AC200E5CEA9 /* ThirdRootView.swift in Sources */,
 				05465EFA2DF9CA1D00E5CEA9 /* SecondDetalisView.swift in Sources */,
 				05465F002DF9E8D000E5CEA9 /* ThirdEditView.swift in Sources */,
 				05465EA12DF75B7000E5CEA9 /* ThirdRootStore.swift in Sources */,
 				05465E9D2DF75B6000E5CEA9 /* FirstReducer.swift in Sources */,
 				05465EFC2DF9CA2F00E5CEA9 /* SecondDetailsReducer.swift in Sources */,
+				05F85E9A2DFC7CE200482DE8 /*  CustomNavEditStore.swift in Sources */,
+				05F85E9B2DFC7CE200482DE8 /* CustomNavEditView.swift in Sources */,
 				05465EA72DF7678F00E5CEA9 /* TabItem.swift in Sources */,
 				05465E842DF71D6200E5CEA9 /* TCA_Arch_PratciceApp.swift in Sources */,
 				05F85E882DF9F74500482DE8 /* ThirdDetailsView.swift in Sources */,

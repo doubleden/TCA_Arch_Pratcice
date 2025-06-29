@@ -11,12 +11,14 @@ enum TabItem: CaseIterable {
     case firstTabView
     case secondTabView
     case thirdTabView
+    case suiNavigation
     
     var image: String {
         switch self {
         case .firstTabView: "1.circle"
         case .secondTabView: "2.circle"
         case .thirdTabView: "3.circle"
+        case .suiNavigation: "4.circle"
         }
     }
 
@@ -25,6 +27,7 @@ enum TabItem: CaseIterable {
         case .firstTabView: "screen 1"
         case .secondTabView: "screen 2"
         case .thirdTabView: "screen 3"
+        case .suiNavigation: "screen 4"
         }
     }
     
@@ -33,6 +36,7 @@ enum TabItem: CaseIterable {
         case .firstTabView: 1
         case .secondTabView: 2
         case .thirdTabView: 3
+        case .suiNavigation: 4
         }
     }
 }

@@ -15,21 +15,31 @@ struct AppCoreView: View {
     var body: some View {
         WithPerceptionTracking {
             NavigationStorageView {
-                switch store.selectedTab {
-                case .firstTabView:
-                    FirstView(store: store.scope(state: \.firstReducer, action: \.firstReducer))
-                        .customTabBar(store: store)
-                case .secondTabView:
-                    SecondView(store: Store(initialState: SecondReducer.State()) {
-                        SecondReducer()
-                    })
-                    .customTabBar(store: store)
-                case .thirdTabView:
-                    ThirdRootView(store: Store(initialState: ThirdRootStore.State()) {
-                        ThirdRootStore()
-                    })
-                    .customTabBar(store: store)
+                ZStack {
+                    switch store.selectedTab {
+                    case .firstTabView:
+                        FirstView(store: store.scope(state: \.firstReducer, action: \.firstReducer))
+                            .transition(.scale)
+                    case .secondTabView:
+                        SecondView(store: Store(initialState: SecondReducer.State()) {
+                            SecondReducer()
+                        })
+                        .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
+                        
+                    case .thirdTabView:
+                        ThirdRootView(store: Store(initialState: ThirdRootStore.State()) {
+                            ThirdRootStore()
+                        })
+                        .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .scale(scale: 1)))
+                    case .suiNavigation:
+                        CustomNavigationView(store: Store(initialState: CustomNavigationStore.State(), reducer: {
+                            CustomNavigationStore()
+                        }))
+                        .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .scale(scale: 1)))
+                    }
                 }
+                .customTabBar(store: store)
+                .animation(.easeInOut, value: store.selectedTab)
             }
         }
     }

@@ -9,7 +9,7 @@ import ComposableArchitecture
 struct ThirdDetailsStore {
     
     @ObservableState
-    struct State {
+    struct State: Equatable {
         let user: User
     }
     

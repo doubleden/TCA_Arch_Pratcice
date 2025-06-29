@@ -1,29 +1,26 @@
 //
-//  ThirdEditStore.swift
-//  TCA_Arch_Pratcice
-//
-//  Created by Denis Denisov on 11/6/25.
+//  CustomNavDetailStore.swift
 //
 
 import Foundation
 import ComposableArchitecture
 
 @Reducer
-struct ThirdEditStore {
+struct CustomNavDetailStore {
     
     @ObservableState
-    struct State: Equatable {
+    struct State {
         
     }
     
     enum Action {
-        case backToRoot
+        case action
     }
     
     var body: some Reducer<State, Action> {
         Reduce { state, action in
             switch action {
-            case .backToRoot:
+            default:
                 return .none
             }
         }

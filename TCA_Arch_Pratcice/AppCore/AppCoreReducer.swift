@@ -10,6 +10,7 @@ import ComposableArchitecture
 
 @Reducer
 struct  AppCoreReducer {
+    
     @ObservableState
     struct State {
         var selectedTab = TabItem.firstTabView

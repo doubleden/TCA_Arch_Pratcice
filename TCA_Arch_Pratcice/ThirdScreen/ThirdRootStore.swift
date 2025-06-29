@@ -12,7 +12,7 @@ import ComposableArchitecture
 struct ThirdRootStore {
     
     @ObservableState
-    struct State {
+    struct State: Equatable {
         var stack = StackState<Destination.State>()
     }
     
@@ -47,5 +47,14 @@ extension ThirdRootStore {
     enum Destination {
         case thirdEdit(ThirdEditStore)
         case thirdDetails(ThirdDetailsStore)
+        
+        @ObservableState
+        enum State: CaseReducerState, Equatable {
+            typealias StateReducer = Destination
+            
+            case thirdEdit(ThirdEditStore.State)
+            case thirdDetails(ThirdDetailsStore.State)
+        }
     }
+    
 }

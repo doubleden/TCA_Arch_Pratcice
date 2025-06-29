@@ -14,9 +14,14 @@ struct ThirdRootView: View {
     var body: some View {
         WithPerceptionTracking {
             NavigationStack(path: $store.scope(state: \.stack, action: \.stack)) {
-                VStack {
-                    Button("show details") {
-                        store.send(.showDetails)
+                ZStack {
+                    Rectangle()
+                        .fill(Color.red)
+                        .ignoresSafeArea()
+                    VStack {
+                        Button("show details") {
+                            store.send(.showDetails)
+                        }
                     }
                 }
             } destination: { store in
